@@ -18,7 +18,6 @@ export const featureFlags = {
   respondentCopy: 'respondent-copy' as const,
   statusTracker: 'status-tracker' as const,
   designDrawerFormTitle: 'design-drawer-form-title' as const,
-  signatureField: 'signature-field' as const,
   adminPrintPdf: 'admin-print-pdf' as const,
   ogpSuiteSso: 'ogp-suite-sso' as const,
   enableIntranetSgidLogin: 'enable-intranet-sgid-login' as const,
@@ -28,7 +27,15 @@ export const featureFlags = {
   singpassMrf: 'singpass-mrf' as const,
   enableSaveDraftButtonFloating: 'enable-save-draft-button-floating' as const,
   enableSaveDraftButtonHeader: 'enable-save-draft-button-header' as const,
+  adminEmailPdf: 'admin-email-pdf' as const,
   ogpHeader: 'enable-ogp-header' as const,
   ogpAwareness: 'ogp-awareness' as const,
   ogpSpinner: 'ogp-spinner' as const,
+  forumsg: 'forumsg' as const,
+}
+
+export enum AdminEmailPdfFeatureValue {
+  OFF = 'OFF',
+  SIGNATURES_ONLY = 'SIGNATURES_ONLY',
+  ON = 'ON',
 }
