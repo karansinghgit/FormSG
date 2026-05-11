@@ -153,11 +153,13 @@ export const CalendarHeader = memo(
 
     return (
       <Flex sx={styles.monthYearSelectorContainer}>
-        {monthOffset === 0 ? (
-          <SelectableMonthYear />
-        ) : (
-          <MonthYear monthOffset={monthOffset} />
-        )}
+        <Flex sx={styles.monthYearDropdownContainer}>
+          {monthOffset === 0 ? (
+            <SelectableMonthYear />
+          ) : (
+            <MonthYear monthOffset={monthOffset} />
+          )}
+        </Flex>
         {calendars.length - 1 === monthOffset ? (
           <Flex sx={styles.monthArrowContainer}>
             <IconButton

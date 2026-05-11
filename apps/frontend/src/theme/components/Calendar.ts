@@ -111,14 +111,18 @@ export const Calendar: ComponentMultiStyleConfig<typeof parts> = {
       monthYearSelectorContainer: {
         display: 'flex',
         justifyContent: 'space-between',
+        width: '100%',
       },
       monthYearDropdownContainer: {
         display: 'flex',
         justifyContent: 'flex-start',
+        flex: 1,
+        minWidth: 0,
       },
       monthArrowContainer: {
         display: 'flex',
         justifyContent: 'flex-end',
+        flexShrink: 0,
       },
       calendarContainer: {
         display: {
